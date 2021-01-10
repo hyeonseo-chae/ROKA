@@ -1,0 +1,17 @@
+endpoints {
+  action-endpoints {
+
+    action-endpoint (dday) {
+      accepted-inputs (startDate,kinds, find, endDate)
+      local-endpoint (dday.js) 
+    }
+    action-endpoint (dday_finish) {
+      accepted-inputs (startDate, kinds, find, endDate)
+      local-endpoint (dday_finish.js) 
+    }
+
+
+    }
+
+
+}

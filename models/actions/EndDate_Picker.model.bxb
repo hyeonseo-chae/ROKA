@@ -1,0 +1,21 @@
+action (EndDate_Picker) {
+  type (Search)
+  description (A test action)
+  collect {
+    input (endDate) {
+      type (EndDate)
+      min (Optional) max (One)
+       default-select {
+      // Enabled Selection Learning w/o any Selection Behaviors
+      with-learning { }
+    }
+    }
+  }
+  output (EndDate) {
+    evaluate {
+      $expr (endDate) //이부분을 통해 바로 myDate_Start 데이터를 넘겨줌
+    }
+  }
+  
+}
+

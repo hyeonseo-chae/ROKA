@@ -1,0 +1,37 @@
+result-view {
+  // This view is used to show the SpaceResort details when the user select a space resort from a summary list. This follows the design paradigm to go from Summary to Details
+  match {
+    Results (results)
+  }
+  message{
+    template ("오늘까지 #{value(results.total)}%근무했으며, 전역일까지 #{value(results.remining_day)}일, 대략 #{value(results.remining_time)}시간 남았네요."){
+      speech("오늘까지 #{value(results.total)}%근무했으며, 전역일까지 #{value(results.remining_day)}일, 대략 #{value(results.remining_time)}시간 남았네요.")}
+    }
+  render {
+      layout{
+        layout-macro (dday-details) {
+          param (results) {
+            expression (results)
+                  }
+                 }
+                }
+               }
+
+  conversation-drivers {
+     conversation-driver {
+      template ("전역일 변경해줘")
+    }
+    conversation-driver {
+      template ("다음 진급까지 얼마나 남았어?")
+    }
+    conversation-driver {
+      template ("기타동물 검색결과 보여줘")
+    }
+  }
+               
+}
+              
+  
+  
+
+

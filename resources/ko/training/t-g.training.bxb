@@ -1,0 +1,5 @@
+train (t-gbe0xyfu9pccmjr5duzt9i22w) {
+  utterance ("[g:dday] (해병대)[v:Kinds:ROKMC] 전역 (언제해?)[v:find:findby]")
+  plan (Y2BlkM7My0iMT8qsSKrUSyzKrXRxSazUC0otLs0pKWaQwCaZkpJYySCJTcY7My+lmEEWm1RwSWJRiUtiSSp2M9OAOhlYGBgZmBiYgTQDkAWBMMAMlgPKAAA=)
+  last-modified (1591198065208)
+}

@@ -1,0 +1,33 @@
+capsule {
+  id (inha_bixby.armyDDay)
+  version (0.1.0)
+  format (3)
+   targets {
+    target (bixby-mobile-ko-KR)
+  }
+  capsule-imports {
+    import (viv.entity) { version(4.0.14) as (entity)  }
+    import (viv.time) { as (time) version(3.1.144) }
+    import (viv.core) {
+      as (core)
+    }
+
+    import (viv.image) {
+      as (image) version(2.12.12)
+    }
+  }
+    permissions{
+    user-profile-access
+  }
+  store-sections{
+    section (ArtAndLifestyle)
+    section (Utilities)
+  }
+
+  runtime-version(8)
+  store-countries {
+    all {
+      except (CN)
+    }
+  }
+}

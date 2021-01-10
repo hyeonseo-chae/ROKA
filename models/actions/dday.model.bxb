@@ -1,0 +1,53 @@
+action (dday) {
+description (dday 계산)
+ type(Constructor)
+ collect{
+   input (startDate) {
+     type (StartDate)
+     min (Required) max (One)
+   
+    default-init {
+          intent{
+          goal: dday
+          }
+        }
+   }
+   input (endDate) {
+     type (EndDate)
+     min (Optional) max (One)
+   
+    default-init {
+          intent{
+          goal: dday
+          }
+        }
+   }
+   input (find) {
+     type (find)
+     min (Optional) max (One)
+   }
+
+   input (kinds) {
+     type (Kinds)
+     min (Optional) max (One)
+
+      default-select {
+      // Enabled Selection Learning w/o any Selection Behaviors
+      with-learning { }
+    }
+    
+     default-init {
+    intent {
+     goal: Kinds
+     value: Kinds(ROKAF)
+     value: Kinds(ROKA)
+     value: Kinds(ROKNAVY)
+     value: Kinds(ROKMC)
+    }
+   }
+     }
+ }
+ 
+ output(Results)
+ }
+

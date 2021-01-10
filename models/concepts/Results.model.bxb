@@ -1,0 +1,37 @@
+structure (Results) {
+  description (전역날짜 계산에 대한 결과)
+  property (start) {
+    type (Start)
+    min (Optional) max (Many)
+  }
+  property (end) {
+    type (End)
+    min (Optional) max (Many)
+  }
+  property (remining_day) {
+    type (Remining_day)
+    min (Optional) max (Many)
+  }
+  property (remining_time) {
+    type (Remining_time)
+    min (Optional) max (Many)
+  }
+  property (total) {
+    type (Total)
+    min (Optional) max (Many)
+  }
+  property (tot_day) {
+    type (Tot_day)
+    min (Optional) max (Many)
+  }
+  property (status) {
+    type (Status)
+    min (Optional) max (Many)
+  }
+  property (minus_day) {
+  type (Minus_day)
+  min (Optional) max (Many)
+}
+
+}
+

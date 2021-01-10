@@ -1,0 +1,10 @@
+enum (Kinds) {
+  description (군 별)
+  symbol (ROKA)
+  symbol (ROKAF)
+  symbol (ROKNAVY)
+  symbol (ROKMC)
+  features{
+  transient
+  }
+}

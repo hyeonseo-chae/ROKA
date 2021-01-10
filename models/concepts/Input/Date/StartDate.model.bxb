@@ -1,0 +1,7 @@
+structure (StartDate) {
+  role-of (time.Date)
+  features{
+  transient
+  }
+}
+//군입대 날짜

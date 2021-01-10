@@ -1,0 +1,172 @@
+layout-macro-def (dday-details) {
+  params {
+    param (results) {
+      type (Results)
+      min (Required) max (One)
+    }
+  }
+  content{
+      section {
+        content {
+          title-area {
+            halign (Center)
+            slot1 {
+              text {
+                value ("전역날짜 상세정보")
+                style (Title_XS)
+                
+              }
+            }
+          }
+        compound-card {
+          content {
+              image-card {
+                    aspect-ratio(4:3)
+                    image-object-fit(Cover)
+                    image-url("/images/results11.jpg")
+                    text-position(Overlay)
+                    title-area {
+                      halign(End)
+                      slot1 {
+                        single-line {
+                          image {
+                            style(Detail_M)
+                            url(http://bixby-client.aibixby.com/builder/assets/calendar.png)
+                          }
+                          spacer
+                          text {
+                            style(Detail_L)
+                            value(오늘까지)
+                          }
+                        }
+                      }
+                      slot2 {
+                        single-line {
+                          text {
+                            style(Title_XXL)
+                            color(Red)
+                            value("#{value(results.total)}%")
+                          }
+                          
+                        }
+                      }
+                    }
+                  }
+                  image-card {
+                    aspect-ratio(4:3)
+                    image-object-fit(Cover)
+                    image-url("/images/results22.jpg")
+                    text-position(Overlay)
+                    title-area {
+                      halign(End)
+                      slot1 {
+                        single-line {
+                          image {
+                            style(Detail_M)
+                            url(http://bixby-client.aibixby.com/builder/assets/calendar.png)
+                          }
+                          spacer
+                          text {
+                            style(Detail_L)
+                            value(앞으로 전역까지)
+                          }
+                        }
+                      }
+                      slot2 {
+                        single-line {
+                          text {
+                            style(Title_L)
+                            color(Red)
+                            value("#{value(results.remining_day)} 일, #{value(results.remining_time)} 시간")
+                          }
+                          
+                        }
+                      }
+                    }
+                  }
+              
+              // single-line {
+              //     text {
+              //         value {
+              //             template ("오늘까지") // Fields of America for Fall
+              //         }
+              //         style (Title_XS)
+                      
+              //     }
+              // }
+              //     single-line {
+              //     text {
+              //         value {
+              //             template ("#{value(results.total)}%") // Fields of America for Fall
+              //         }
+              //         style (Title_L)
+              //         color (Red)
+              //     }
+              // }
+     
+        // single-line {
+        //     text {
+        //     value ("앞으로 전역까지")
+        //     style (Title_XS)
+        //     }
+        //     }
+        // single-line {
+        //     text {
+        //     value ("#{value(results.remining_day)} 일, #{value(results.remining_time)} 시간")
+        //     style (Title_L)
+        //     color (Red)
+        //     }
+        // }
+        single-line {
+            text {
+            value ("#{value(results.status)}")
+            style (Detail_L)
+            color (Amber)
+            }
+           }
+          }
+        }
+          partitioned {
+            content {
+              single-line {
+                text {
+                  value ("입대일: #{value(results.start)}") 
+                  style (Detail_L)
+                
+                }
+              }
+            single-line {
+                text {
+                  value ("전역일: #{value(results.end)}")
+                  style (Detail_L)
+                }
+              }
+            single-line {
+                text { 
+                  value ("총 복무일: #{value(results.tot_day)} 일")
+                  style (Detail_L)
+                }
+              }
+            single-line {
+                text { 
+                  value ("단축일: #{value(results.minus_day)} 일")
+                  style (Detail_L)
+                }
+              }
+            single-line {
+                text {
+                  value ("무적상승 벽제포대 화이팅 야! -743th-")
+                  style (Detail_L)
+                  color (Blue)
+                }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+ 
+
+  

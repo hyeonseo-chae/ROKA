@@ -1,0 +1,63 @@
+input-view{
+    match: Kinds(this){
+        to-input: dday
+        to-input: dday_finish
+    }
+ message{
+  template ("선택해주세요")
+ }
+ render{
+  selection-of (this){
+      where-each (this){
+    if (this == 'ROKAF') {
+        image-card {
+      image-url ("/images/rokaf.jpg")
+      title-area {
+          slot2 {
+        single-line {
+            text("공군")
+        }
+          }
+      }
+        }
+    }
+    if (this == 'ROKA'){
+        image-card {
+      image-url ("/images/roka.jpg")
+      title-area {
+          slot2 {
+        single-line {
+            text("육군")
+        }
+          }
+      }
+        }
+    }
+    if (this == 'ROKNAVY'){
+        image-card {
+      image-url ("/images/roknavy.jpg")
+      title-area {
+          slot2 {
+        single-line {
+            text("해군")
+        }
+          }
+      }
+        }
+    }
+    if (this == 'ROKMC'){
+        image-card {
+      image-url ("/images/rokmc.jpg")
+      title-area {
+          slot2 {
+        single-line {
+            text("해병대")
+        }
+          }
+      }
+        }
+    }
+      }
+  }
+ }
+}

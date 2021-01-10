@@ -1,0 +1,21 @@
+capsule-info {
+  display-name (전역하자)
+  developer-name (샌프란듀오)
+  icon-asset (images/soldier.png)
+  description ("당신의 전역일수를 세어드립니다.. \n 해당 캡슐을 실행 시키고 싶으시면 \"전역하자에서\", \"전역에서\"중 하나로 해당 캡슐을 실행시킬 수 있습니다.")
+  privacy-policy-url(https://docs.google.com/document/d/1aewKfogXjE1SnBwc44qwegjsVPNqyUsfn195Uf--jOg/edit?usp=sharing)
+  search-keywords {
+      keyword (군대)
+      keyword (전역)
+      keyword (전역디데이)
+      keyword (전역계산)
+      keyword (군생활)
+      keyword (군)
+      keyword (공군)
+      keyword (육군)
+      keyword (해군)
+      keyword (의경)
+    }
+    dispatch-name(전역 하자)
+    
+    }

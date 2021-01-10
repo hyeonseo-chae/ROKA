@@ -51,7 +51,7 @@ function dateAddDel(sDate, nNum, type) {
 }
 //디데이 계산 함수 
 
-//함수 테스트
+//���수 테스트
 // start = "20200616"
 // start_c = "2020-06-16"
 // var roka_std = "20170103";
@@ -214,7 +214,7 @@ if (kinds == 'ROKA' || kinds == "ROKMC") {
   }
 
 
-///군 종���에 따라 전역일 계산
+///군 종���에 따��� 전역일 계산
 
 console.log('진급일',level_1, level_2, level_3)
 console.log('전역날', end)
@@ -257,7 +257,7 @@ if (Number(now_c) < Number(level_1)){
 }else if (Number(now_c) >= Number(level_3) && Number(now_c) < Number(end2) ){
   var now_level = "병장"
 }else if (Number(now_c) >= Number(end2)){
-  var now_level = "예비역"
+  var now_level = "��비역"
 }
 
 
@@ -283,7 +283,7 @@ if (total < 50 ) {
   }else if (total >= 50 && total < 75 ) {
    var status = "오~~ 짬 좀 찼는걸?";
   }else if(total > 75 && total < 99 ){
-   var status = "조금만 ��내세요."; 
+   var status = "조금만 더 힘내세요."; 
   }else if(total > 99){
    var status = "오 ㅊㅋㅊㅋ 곧 전역이시군요!";}
 
@@ -308,7 +308,8 @@ console.log('계급:',now_level)
 // var DDay = Math.floor(gap / (1000 * 60 * 60 * 24)) * -1;    // gap을 일(밀리초 * 초 * 분 * 시간)��� ��눈다. 이 때 -1 을 곱해야 날짜차이가 맞�� 나온다.
  
  
-
+start = Str_Y+"년 " + Str_M+"월 " + Str_D+"일"; // 년월일을 조금 더 가식적으로 보이기 위해 추가함.
+end2 = Math.floor(end2/10000)+"년 "+ Math.floor((end2%10000)/100)+"월 "+(end2%100)+"일";// 년월일을 조금 더 가식적으로 보이기 위해 추가함.
 
 return {start : start,
         end : end2,

@@ -1,4 +1,11 @@
 capsule-info {
+   requested-permissions {
+    permission (user-profile-access){
+      justification (당신의 프로필 정보는 전역일을 계산하는데 필요합니다.)
+    }
+  }
+    
+  
   display-name (전역하자)
   developer-name (샌프란듀오)
   icon-asset (images/soldier.png)

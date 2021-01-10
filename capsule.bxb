@@ -1,13 +1,13 @@
 capsule {
-  id (inha_bixby.armyDDay)
+  id (friends.roka)
   version (0.1.0)
   format (3)
    targets {
     target (bixby-mobile-ko-KR)
   }
   capsule-imports {
-    import (viv.entity) { version(4.0.14) as (entity)  }
-    import (viv.time) { as (time) version(3.1.144) }
+
+    import (viv.time) { as (time) version(3.3.26) }
     import (viv.core) {
       as (core)
     }
@@ -16,7 +16,8 @@ capsule {
       as (image) version(2.12.12)
     }
   }
-    permissions{
+  
+  permissions {
     user-profile-access
   }
   store-sections{

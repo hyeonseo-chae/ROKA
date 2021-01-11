@@ -313,7 +313,7 @@ end2 = Math.floor(end2/10000)+"년 "+ Math.floor((end2%10000)/100)+"월 "+(end2%
 
 return {start : start,
         end : end2,
-        tot_day : tot_day + 1 ,
+        tot_day : tot_day  ,
         minus_day : minus_day * -1,
         remining_day: remining_day,
         remining_time: remining_time,

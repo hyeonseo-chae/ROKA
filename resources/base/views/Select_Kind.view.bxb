@@ -1,8 +1,5 @@
 input-view{
-    match: Kinds(this){
-        to-input: dday
-        to-input: dday_finish
-    }
+    match: Kinds(this)
  message{
   template ("선택해주세요")
  }

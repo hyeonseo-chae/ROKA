@@ -74,7 +74,7 @@ function minus(start, kinds) {
 	// var dd = parseInt(start.substr(6, 2), 10); 
   start_c = convert(start)  
   var roka_std = "20170103"
-  var rokaf_std = "20161003"
+  var rokaf_std = "20190121"
   var roknavy_std = "20161103"
 
   if (kinds == "ROKA" && Number(start) >= Number(roka_std)) {
@@ -99,15 +99,15 @@ function minus(start, kinds) {
 	  ///while (parseInt(d.substr(0, 4), 10) == 2020 && parseInt(d.substr(4, 2), 10) == 6 && parseInt(d.substr(6, 2) == 2 ){
       minus_day = Math.floor(rtn_day(start_c, convert(rokaf_std)) * -1 / 14) + 1 ;
       
-      if (minus_day == 60) {
-        minus_day = 60 ;
-        }else if (minus_day > 60) {
+      if (minus_day == 30) {
+        minus_day = 30 ;
+        }else if (minus_day > 30) {
             if (start.substring(4, 6) == "03" || start.substring(4, 6) == "04") {
-              minus_day = 59
+              minus_day = 29
               } else if (start.substring(4, 6) == "02" || start.substring(4, 6) == "09") {
-              minus_day = 62;
+              minus_day = 32;
               } else{
-              minus_day = 61;
+              minus_day = 31;
               }
             }
            }
@@ -257,7 +257,7 @@ if (Number(now_c) < Number(level_1)){
 }else if (Number(now_c) >= Number(level_3) && Number(now_c) < Number(end2) ){
   var now_level = "병장"
 }else if (Number(now_c) >= Number(end2)){
-  var now_level = "��비역"
+  var now_level = "예비역"
 }
 
 

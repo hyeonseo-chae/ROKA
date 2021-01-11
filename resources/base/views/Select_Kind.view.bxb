@@ -6,18 +6,7 @@ input-view{
  render{
   selection-of (this){
       where-each (this){
-    if (this == 'ROKAF') {
-        image-card {
-      image-url ("/images/rokaf.jpg")
-      title-area {
-          slot2 {
-        single-line {
-            text("공군")
-        }
-          }
-      }
-        }
-    }
+    
     if (this == 'ROKA'){
         image-card {
       image-url ("/images/roka.jpg")
@@ -30,7 +19,7 @@ input-view{
       }
         }
     }
-    if (this == 'ROKNAVY'){
+      if (this == 'ROKNAVY'){
         image-card {
       image-url ("/images/roknavy.jpg")
       title-area {
@@ -42,6 +31,19 @@ input-view{
       }
         }
     }
+    if (this == 'ROKAF') {
+        image-card {
+      image-url ("/images/rokaf.jpg")
+      title-area {
+          slot2 {
+        single-line {
+            text("공군")
+        }
+          }
+      }
+        }
+    }
+  
     if (this == 'ROKMC'){
         image-card {
       image-url ("/images/rokmc.jpg")

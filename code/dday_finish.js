@@ -85,15 +85,15 @@ function minus(start, kinds) {
 	  ///while (parseInt(d.substr(0, 4), 10) == 2020 && parseInt(d.substr(4, 2), 10) == 6 && parseInt(d.substr(6, 2) == 2 ){
       minus_day = Math.floor(rtn_day(start_c, convert(rokaf_std)) * -1 / 14) + 1 ;
       
-      if (minus_day == 60) {
-        minus_day = 60 ;
-        }else if (minus_day > 60) {
+      if (minus_day == 30) {
+        minus_day = 30 ;
+        }else if (minus_day > 30) {
             if (start.substring(4, 6) == "03" || start.substring(4, 6) == "04") {
-              minus_day = 59
+              minus_day = 29
               } else if (start.substring(4, 6) == "02" || start.substring(4, 6) == "09") {
-              minus_day = 62;
+              minus_day = 32;
               } else{
-              minus_day = 61;
+              minus_day = 31;
               }
             }
            }

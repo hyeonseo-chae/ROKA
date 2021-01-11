@@ -155,7 +155,7 @@ layout-macro-def (dday-details) {
               }
             single-line {
                 text {
-                  value ("무적상승 벽제포대 화이팅 야! -743th-")
+                  value ("명문 1기갑여단 본부근무대 화이팅! -잇슐랭-")
                   style (Detail_L)
                   color (Blue)
                 }

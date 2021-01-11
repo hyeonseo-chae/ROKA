@@ -38,11 +38,12 @@ description (dday 계산)
     
      default-init {
     intent {
-     goal: Kinds
-     value: Kinds(ROKAF)
-     value: Kinds(ROKA)
-     value: Kinds(ROKNAVY)
+      goal:Kinds
+      value:Kinds(ROKA)
+      value: Kinds(ROKNAVY)
+      value: Kinds(ROKAF)
      value: Kinds(ROKMC)
+
     }
    }
      }
